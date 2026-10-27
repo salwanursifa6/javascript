@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Latihan JavaScript</h1>
+        <p>Belajar JavaScript sederhana</p>
+
+        <hr>
+
+        <!-- 1. Pesan JavaScript -->
+        <h2>1. Pesan JavaScript</h2>
+        <button onclick="pesanJavaScript()">Klik Saya</button>
+        <p id="pesan"></p>
+        
+
+        <hr>
+        
+
+        <!-- 2. Nama dan Umur -->
+        <h2>2. Nama dan Umur</h2>
+        <input type="text" id="nama" placeholder="Masukkan nama">
+        <input type="number" id="umur" placeholder="Masukkan umur">
+        <button onclick="tampilkanNama()">Tampilkan</button>
+        <p id="hasilNama"></p>
+
+        <hr>
+
+        <!-- 3. Kalkulator -->
+        <h2>3. Kalkulator</h2>
+        <input type="number" id="angka1" placeholder="Angka pertama">
+
+        <select id="operator">
+            <option value="+">Penjumlahan (+)</option>
+            <option value="-">Pengurangan (-)</option>
+            <option value="*">Perkalian (×)</option>
+            <option value="/">Pembagian (÷)</option>
+        </select>
+
+        <input type="number" id="angka2" placeholder="Angka kedua">
+        <button onclick="hitung()">Hitung</button>
+        <p id="hasilKalkulator"></p>
+
+        <hr>
+
+        <!-- 4. Ganti Warna -->
+        <h2>4. Ganti Warna Light</h2>
+        <p id="namaWarna">Warna sekarang: lavenderblush</p>
+        <button onclick="gantiWarna()">Ganti Warna</button>
+
+        <hr>
+
+        <!-- Reset Semua -->
+        <button onclick="resetSemua()" class="reset">
+            Reset Semua
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
